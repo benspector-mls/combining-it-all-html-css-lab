@@ -33,7 +33,6 @@ header h1 {
 .nav-list {
     display: flex;
 }
-
 .nav-item {
     list-style: none;
     padding-right: 2em;
@@ -44,11 +43,14 @@ header h1 {
     font-size: 1.2em;
 }
 
-.grid-container {
+.gallery-title {
+    text-align: center;
+    padding: 1rem;
+}
+.gallery-container {
     display: grid;
     gap: 1em;
 }
-
 .gallery-item {
     display: flex;
     flex-direction: column;
@@ -57,7 +59,7 @@ header h1 {
 }
 
 @media (min-width: 600px) {
-    .gallery.grid-container {
+    .gallery-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
