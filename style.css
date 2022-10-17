@@ -1,0 +1,71 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, header, main, h1, h2, p, ul { margin: 0; padding: 0; }
+
+body {
+    background-color: lavenderblush;
+}
+main {
+    padding: 1em;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2em 1em;
+}
+
+header h1 {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    list-style: none;
+    padding-right: 2em;
+}
+.nav-item a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1em;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    .gallery.grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header h1 {
+        display: initial;
+    }
+
+    .nav-item {
+        padding-left: 2em;
+    }
+}   
